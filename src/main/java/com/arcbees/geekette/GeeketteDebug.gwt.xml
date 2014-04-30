@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<module rename-to='geekette'>
+    <inherits name='com.arcbees.geekette.Geekette'/>
+
+    <set-configuration-property name="CssResource.style" value="pretty"/>
+
+    <extend-configuration-property name="gin.ginjector.modules"
+                                   value="com.arcbees.geekette.client.LocalModule"/>
+</module>

@@ -1,0 +1,76 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, embed, img, ins, kbd, q, s, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, menu, nav, section, summary, time, mark, audio, video {
+    font-size: 100%;
+    background: transparent;
+
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+
+    outline: 0;
+}
+
+article,
+footer,
+header,
+nav,
+section {
+    display: block;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 20px;
+    line-height: 1.25;
+}
+
+a {
+    text-decoration: none;
+}
+
+img, table, td, blockquote, code, pre, textarea, input, video {
+    max-width: 100%;
+}
+
+img {
+    height: auto;
+    border: 0;
+
+    vertical-align: middle;
+
+    -ms-interpolation-mode: bicubic;
+}
+
+/* clear */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.inbl {
+    display: inline-block;
+    margin-right: -.25em;
+
+    vertical-align: top;
+}
+
+button, input, select, textarea {
+    font-size: 100%;
+
+    margin: 0;
+
+    vertical-align: middle;
+}
+
+footer small {
+    font-size: 12px;
+}
