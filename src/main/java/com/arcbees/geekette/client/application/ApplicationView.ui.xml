@@ -103,7 +103,7 @@
                                 <g:Image resource="{coreRes.logoCrown}"/>
                             </div>
                             <h3>geekettes<br/>recherchées</h3>
-                            <p>pour rencontre IRL afin de découvrir le monde des mousseux et champagnes, déguster des bouchées et tester leur connaissance de la culture geek via une Application rendue disponible au cours de la soirée, le tout afin de couronner <strong>LA geekette de Québec.</strong></p>
+                            <p>pour rencontre IRL afin de découvrir le monde des mousseux et champagnes, déguster des bouchées et tester leur connaissance de la culture geek au cours de la soirée, le tout afin de couronner <strong>LA geekette de Québec.</strong></p>
                             <p class="{coreRes.styles.txtPink}"><strong>Faites vite, les places sont limitées!</strong></p>
                             <p>Les geeks sont également les bienvenus.</p>
                         </div>
