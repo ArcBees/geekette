@@ -20,7 +20,7 @@
         <gae-studio.version>0.8.2</gae-studio.version>
 
         <!-- server -->
-        <gae.version>1.9.2</gae.version>
+        <gae.version>1.9.4</gae.version>
         <guice.version>3.0</guice.version>
         <arcbees.version>1.1.1</arcbees.version>
         <resteasy.version>3.0.6.Final</resteasy.version>
@@ -28,7 +28,6 @@
 
         <!-- maven -->
         <maven-compiler-plugin.version>2.3.2</maven-compiler-plugin.version>
-        <maven-gae-plugin.version>0.9.6</maven-gae-plugin.version>
 
         <target.jdk>1.7</target.jdk>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

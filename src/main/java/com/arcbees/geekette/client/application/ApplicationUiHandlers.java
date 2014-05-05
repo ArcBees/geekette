@@ -16,14 +16,8 @@
 
 package com.arcbees.geekette.client.application;
 
-import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
+import com.gwtplatform.mvp.client.UiHandlers;
 
-public class ApplicationModule extends AbstractPresenterModule {
-    @Override
-    protected void configure() {
-        bindPresenter(ApplicationPresenter.class, ApplicationPresenter.MyView.class, ApplicationView.class,
-                ApplicationPresenter.MyProxy.class);
-
-        bindSingletonPresenterWidget(BuyPresenter.class, BuyPresenter.MyView.class, BuyView.class);
-    }
+public interface ApplicationUiHandlers extends UiHandlers {
+    void onBuy();
 }

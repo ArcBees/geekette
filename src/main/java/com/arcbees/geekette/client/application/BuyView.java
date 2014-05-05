@@ -16,14 +16,23 @@
 
 package com.arcbees.geekette.client.application;
 
-import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
+import javax.inject.Inject;
 
-public class ApplicationModule extends AbstractPresenterModule {
-    @Override
-    protected void configure() {
-        bindPresenter(ApplicationPresenter.class, ApplicationPresenter.MyView.class, ApplicationView.class,
-                ApplicationPresenter.MyProxy.class);
+import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.user.client.ui.Widget;
+import com.google.web.bindery.event.shared.EventBus;
+import com.gwtplatform.mvp.client.PopupViewImpl;
 
-        bindSingletonPresenterWidget(BuyPresenter.class, BuyPresenter.MyView.class, BuyView.class);
+public class BuyView extends PopupViewImpl implements BuyPresenter.MyView {
+    interface Binder extends UiBinder<Widget, BuyView> {
+    }
+
+    @Inject
+    BuyView(
+            EventBus eventBus,
+            Binder binder) {
+        super(eventBus);
+
+        initWidget(binder.createAndBindUi(this));
     }
 }
