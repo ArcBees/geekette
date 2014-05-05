@@ -48,87 +48,119 @@
                     </div>
                 </div>
                 <div class="{coreRes.styles.moveFaster}">
-                   <div class='{coreRes.styles.bubble5}'>
+                    <div class='{coreRes.styles.bubble5}'>
                         <svg:SVGImage resource="{coreRes.bubble5}"/>
                     </div>
                 </div>
             </div>
         </div>
-            <div class="{coreRes.styles.section}">
-                <div>
-                    <div class="{coreRes.styles.wrapper} {coreRes.styles.txtcenter}">
-                        <div class="{coreRes.styles.logo}">
-                            <g:Image resource="{coreRes.logo}"/>
-                            <div class="{coreRes.styles.price}">55$</div>
-                        </div>
-                        <p class="{coreRes.styles.title}">soirée dégustation de champagne</p>
-                        <div class="{coreRes.styles.date}">
-                            Jeudi le 28 Mai 2014, 18h
-                        </div>
-                        <div class="{coreRes.styles.place}">
-                            Chez Boulay<br/>797, boulevard lebourgneuf
-                        </div>
-                        <div class="{coreRes.styles.ticket} {coreRes.styles.clearfix}">
-                            <g:Button ui:field="buy">achetez<br/>votre ticket</g:Button>
-                            <div class="{coreRes.styles.partager}">
-                                <div class="{coreRes.styles.share} {coreRes.styles.tt}">
-                                    partager
-                                    <span class="{coreRes.styles.tooltip}">
-                                        <ul>
-                                            <li>
-                                                <a href="#"><svg:SVGImage resource="{coreRes.iconMail}"/></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><svg:SVGImage resource="{coreRes.iconFb}"/></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><svg:SVGImage resource="{coreRes.iconLkin}"/></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><svg:SVGImage resource="{coreRes.iconTwit}"/></a>
-                                            </li>
-                                        </ul>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- wrapper -->
-                </div>
-            </div> <!-- main-container -->
-            <div class="{coreRes.styles.section}">
-                <div>
-                    <div class="{coreRes.styles.wrapper} {coreRes.styles.txtcenter}">
-                        <div class="{coreRes.styles.bubbleWhite}">
-                            <div class="{coreRes.styles.logoCrown}">
-                                <g:Image resource="{coreRes.logoCrown}"/>
-                            </div>
-                            <h3>geekettes<br/>recherchées</h3>
-                            <p>pour rencontre IRL afin de découvrir le monde des mousseux et champagnes, déguster des bouchées et tester leur connaissance de la culture geek au cours de la soirée, le tout afin de couronner <strong>LA geekette de Québec.</strong></p>
-                            <p class="{coreRes.styles.txtPink}"><strong>Faites vite, les places sont limitées!</strong></p>
-                            <p>Les geeks sont également les bienvenus.</p>
-                        </div>
-                        <div class="{coreRes.styles.flip3D}">
-                            <div class="{coreRes.styles.front}">
-                                <p>c'est quoi une<br/>geekette ?</p>
-                            </div>
-                            <div class="{coreRes.styles.back}">
-                                <h3>geekette <span class="{coreRes.styles.dict}">(n.f.)</span></h3>
-                                <p>Femme branchée et passionnée - un peu, beaucoup, passionnément, à la folie -  par l'un ou l'autre des domaines suivants: l'informatique, les nouvelles technologies, le gaming, le cinéma, les séries télé, la science-fiction et les univers fantastiques.</p>
-                            </div>
-                        </div>
-                        <div class="{coreRes.styles.bubbleArcbees} {coreRes.styles.left}">
-                            <p>Un événement</p>
-                            <div class="{coreRes.styles.logoArcbees}">
-                                <a href="http://www.arcbees.com" target="_blank"><svg:SVGImage resource="{coreRes.logoArcbees}"/></a>
+        <div class="{coreRes.styles.section}">
+            <div>
+                <div class="{coreRes.styles.wrapper} {coreRes.styles.txtcenter}">
+                    <div class="{coreRes.styles.logo}">
+                        <g:Image resource="{coreRes.logo}"/>
+                        <div class="{coreRes.styles.price}">55$</div>
+                    </div>
+                    <p class="{coreRes.styles.title}">soirée dégustation de champagne</p>
+                    <div class="{coreRes.styles.date}">
+                        Jeudi le 28 Mai 2014, 18h
+                    </div>
+                    <div class="{coreRes.styles.place}">
+                        Chez Boulay<br/>797, boulevard lebourgneuf
+                    </div>
+                    <div class="{coreRes.styles.ticket} {coreRes.styles.clearfix}">
+                        <g:Button ui:field="buy">achetez<br/>votre ticket
+                        </g:Button>
+                        <div class="{coreRes.styles.partager}">
+                            <div class="{coreRes.styles.share} {coreRes.styles.tt}">
+                                partager
+                                <span class="{coreRes.styles.tooltip}">
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.facebook.com/sharer/sharer.php?s=+100s&amp;p[url]=https://geekettes.arcbees.com/"
+                                               target="_blank">
+                                                <svg:SVGImage resource="{coreRes.iconFb}"/>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://plus.google.com/share?url=https://geekettes.arcbees.com/"
+                                               target="_blank">
+                                                <svg:SVGImage resource="{coreRes.iconLkin}"/>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://geekettes.arcbees.com/"
+                                               target="_blank">
+                                                <svg:SVGImage resource="{coreRes.iconLkin}"/>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://twitter.com/intent/tweet?source=webclient&amp;text=https%3A%2F%2Fgeekettes.arcbees.com%2F"
+                                               target="_blank">
+                                                <svg:SVGImage resource="{coreRes.iconTwit}"/>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </span>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- wrapper -->
             </div>
+        </div>
+        <!-- main-container -->
+        <div class="{coreRes.styles.section}">
+            <div>
+                <div class="{coreRes.styles.wrapper} {coreRes.styles.txtcenter}">
+                    <div class="{coreRes.styles.bubbleWhite}">
+                        <div class="{coreRes.styles.logoCrown}">
+                            <g:Image resource="{coreRes.logoCrown}"/>
+                        </div>
+                        <h3>geekettes<br/>recherchées
+                        </h3>
+                        <p>pour rencontre IRL afin de découvrir le monde des mousseux et champagnes, déguster des
+                            bouchées et tester leur connaissance de la culture geek au cours de la soirée, le tout afin
+                            de couronner
+                            <strong>LA geekette de Québec.</strong>
+                        </p>
+                        <p class="{coreRes.styles.txtPink}">
+                            <strong>Faites vite, les places sont limitées!</strong>
+                        </p>
+                        <p>Les geeks sont également les bienvenus.</p>
+                    </div>
+                    <div class="{coreRes.styles.flip3D}">
+                        <div class="{coreRes.styles.front}">
+                            <p>c'est quoi une<br/>geekette ?
+                            </p>
+                        </div>
+                        <div class="{coreRes.styles.back}">
+                            <h3>geekette
+                                <span class="{coreRes.styles.dict}">(n.f.)</span>
+                            </h3>
+                            <p>Femme branchée et passionnée - un peu, beaucoup, passionnément, à la folie - par l'un ou
+                                l'autre des domaines suivants: l'informatique, les nouvelles technologies, le gaming, le
+                                cinéma, les séries télé, la science-fiction et les univers fantastiques.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="{coreRes.styles.bubbleArcbees} {coreRes.styles.left}">
+                        <p>Un événement</p>
+                        <div class="{coreRes.styles.logoArcbees}">
+                            <a href="http://www.arcbees.com" target="_blank">
+                                <svg:SVGImage resource="{coreRes.logoArcbees}"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <footer>
             <div class="{coreRes.styles.wrapper} {coreRes.styles.clearfix}">
-                    <g:Anchor styleName="{coreRes.styles.backTop}" ui:field="backToTop"></g:Anchor>
-            </div><!-- wrapper -->
-        </footer><!-- footer -->
+                <g:Anchor styleName="{coreRes.styles.backTop}" ui:field="backToTop"></g:Anchor>
+            </div>
+            <!-- wrapper -->
+        </footer>
+        <!-- footer -->
     </g:HTMLPanel>
 </ui:UiBinder>
