@@ -1,3 +1,58 @@
+@url baronNeueEot baronNeueEot;
+@url baronNeueWoff baronNeueWoff;
+@url baronNeueSvg baronNeueSvg;
+@url baronNeueTtf baronNeueTtf;
+
+@url baronNeueBlackEot baronNeueBlackEot;
+@url baronNeueBlackTtf baronNeueBlackTtf;
+@url baronNeueBlackSvg baronNeueBlackSvg;
+@url baronNeueBlackWoff baronNeueBlackWoff;
+
+@url brandonGrotesqueBoldEot brandonGrotesqueBoldEot;
+@url brandonGrotesqueBoldSvg brandonGrotesqueBoldSvg;
+@url brandonGrotesqueBoldTtf brandonGrotesqueBoldTtf;
+@url brandonGrotesqueBoldWoff brandonGrotesqueBoldWoff;
+
+@url brandonGrotesqueLightEot brandonGrotesqueLightEot;
+@url brandonGrotesqueLightSvg brandonGrotesqueLightSvg;
+@url brandonGrotesqueLightTtf brandonGrotesqueLightTtf;
+@url brandonGrotesqueLightWoff brandonGrotesqueLightWoff;
+
+@url brandonGrotesqueRegEot brandonGrotesqueRegEot;
+@url brandonGrotesqueRegSvg brandonGrotesqueRegSvg;
+@url brandonGrotesqueRegTtf brandonGrotesqueRegTtf;
+@url brandonGrotesqueRegWoff brandonGrotesqueRegWoff;
+
+@font-face {
+    font-family: 'baron_neueregular';
+    src: baronNeueEot;
+    src: baronNeueWoff format('woff'), baronNeueTtf format('truetype');
+}
+
+@font-face {
+    font-family: 'baron_neueblack';
+    src: baronNeueBlackEot;
+    src: baronNeueBlackWoff format('woff'), baronNeueBlackTtf format('truetype');
+}
+
+@font-face {
+    font-family: 'brandon_grotesquebold';
+    src: brandonGrotesqueBoldEot;
+    src: brandonGrotesqueBoldWoff format('woff'), brandonGrotesqueBoldTtf format('truetype');
+}
+
+@font-face {
+    font-family: 'brandon_grotesquelight';
+    src: brandonGrotesqueLightEot;
+    src: brandonGrotesqueLightWoff format('woff'), brandonGrotesqueLightTtf format('truetype');
+}
+
+@font-face {
+    font-family: 'brandon_grotesque_regularRg';
+    src: brandonGrotesqueRegEot;
+    src: brandonGrotesqueRegWoff format('woff'), brandonGrotesqueRegTtf format('truetype');
+}
+
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, embed, img, ins, kbd, q, s, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, menu, nav, section, summary, time, mark, audio, video {
     font-size: 100%;
     background: transparent;
@@ -19,12 +74,40 @@ section {
 }
 
 html, body {
+    font-size: 17px;
+    line-height: 1.25;
+
     height: 100%;
 }
 
 body {
-    font-size: 20px;
-    line-height: 1.25;
+    font-family: 'baron_neueregular';
+    background: #ffe30d;
+    background-attachment: fixed;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZTMwZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmY2QwOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmJlMDciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #ffe30d 0%, #ffcd09 50%, #ffbe07 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffe30d), color-stop(50%,#ffcd09), color-stop(100%,#ffbe07));
+    background: -webkit-linear-gradient(top,  #ffe30d 0%,#ffcd09 50%,#ffbe07 100%);
+    background: -o-linear-gradient(top,  #ffe30d 0%,#ffcd09 50%,#ffbe07 100%);
+    background: -ms-linear-gradient(top,  #ffe30d 0%,#ffcd09 50%,#ffbe07 100%);
+    background: linear-gradient(to bottom,  #ffe30d 0%,#ffcd09 50%,#ffbe07 100%);
+}
+
+.height {
+    height: 100%;
+}
+
+h3 {
+    font-size: 15px; /* equiv 22px */
+    font-weight: normal;
+    font-family: 'baron_neueregular';
+
+    margin-bottom: 6px;
+}
+
+p {
+    font-size: 17px;
+    font-family: 'brandon_grotesque_regularRg';
 }
 
 a {
@@ -44,6 +127,10 @@ img {
     -ms-interpolation-mode: bicubic;
 }
 
+strong {
+    font-family: 'brandon_grotesquebold';
+}
+
 /* clear */
 .clearfix:before,
 .clearfix:after {
@@ -56,21 +143,513 @@ img {
     clear: both;
 }
 
-.inbl {
-    display: inline-block;
-    margin-right: -.25em;
-
-    vertical-align: top;
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-button, input, select, textarea {
-    font-size: 100%;
+.txtcenter {
+    text-align: center;
+}
 
-    margin: 0;
+.txtPink {
+    color: #ed217c;
+}
+
+.section {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.section.bubble {
+    position: fixed;
+    z-index: -9;
+}
+
+.section > div {
+    display: table-cell;
 
     vertical-align: middle;
 }
 
-footer small {
-    font-size: 12px;
+.wrapper {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.wrapperBubble {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.logo {
+    margin: 0 auto;
+    margin-bottom: 13px;
+
+    position: relative;
+}
+
+.price {
+    background-color: #fff;
+    color: #ed217c;
+    font-size: 32px;
+    line-height: 80px;
+
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+
+    position: absolute;
+    right: 15px;
+    top: 203px;
+}
+
+.title {
+    font-family: 'baron_neueregular';
+    font-size: 14px;
+}
+
+.date {
+    color: #ed217c;
+    font-family: "baron_neueblack";
+    font-size: 35px;
+
+    margin: 31px 0 3px;
+}
+
+.place {
+    color: #ed217c;
+    font-size: 14px;
+
+    margin-bottom: 47px;
+}
+
+.ticket {
+    position: relative;
+}
+
+.ticket button {
+    color: #ed217c;
+    background-color: transparent;
+    font-size: 24px;
+    font-family: "baron_neueblack";
+    line-height: 1em;
+
+    border: 6px solid #ed217c;
+    display: inline-block;
+    padding: 11px 28px;
+
+    cursor: pointer;
+}
+
+.ticket button:hover {
+    color: #000;
+    border: 6px solid #000;
+}
+
+.partager {
+    text-align: left;
+
+    display: block;
+    width: 150px;
+    height: 50px;
+
+    float: right;
+    margin: 31px 17px 0 -180px;
+}
+
+/* -- tooltips -- */
+.share.tt {
+    text-decoration:none;
+
+    position:relative;
+    z-index: 24;
+}
+
+.share.tt span {
+    display: none;
+
+    position: relative;
+}
+
+.share.tt:hover {
+    color: #ed217c;
+
+    z-index: 25;
+}
+
+.share.tt:hover span.tooltip {
+    background: #ed217c;
+
+    height: 66px;
+    width: 206px;
+    display: block;
+
+    position: absolute;
+    right: -145px;
+    top: -23px;
+}
+
+.share.tt:hover span.tooltip:before {
+    border: solid transparent;
+    border-color: rgba(237, 33, 124, 0);
+    border-right-color: #ed217c;
+    border-width: 7px;
+    content: " ";
+
+    height: 0;
+    width: 0;
+    margin-top: -7px;
+
+    position: absolute;
+    right: 100%;
+    top: 50%;
+
+    pointer-events: none;
+}
+
+.share ul {
+    margin: 13px 15px;
+
+    float: left;
+
+    list-style: none;
+}
+
+.share li {
+    height: 40px;
+    margin: 0 4px 0 0;
+    width: 40px;
+
+    float: left;
+}
+
+.share li a {
+    display: block;
+    height: 40px;
+    margin: 0;
+    width: 40px;
+}
+
+.share li a:hover {
+    opacity: .5;
+}
+
+.bubbleWhite {
+    background-color: #fff;
+
+    height: 570px;
+    width: 570px;
+    border-radius: 285px;
+    padding: 100px;
+    margin: 0 auto;
+}
+
+.bubbleWhite p {
+    font-size: 17px;
+    line-height: 1.25;
+
+    margin-bottom: 10px;
+}
+
+.bubbleWhite h3 {
+    font-family: "baron_neueregular";
+    font-size: 42px;
+    line-height: 1em;
+
+    margin: 20px 0 13px;
+}
+
+.logoCrown {
+    margin-top: -124px;
+}
+
+/* -- Flip --*/
+/* ________________________________ */
+.flip3D {
+    width: 215px;
+    height: 215px;
+    margin: -128px -48px 0 0;
+
+    float: right;
+    position: relative;
+    z-index: 9999;
+}
+
+.flip3D > .front {
+    color: #fff;
+    background-color: #ed217c;
+
+    height: 215px;
+    width: 215px;
+    border-radius: 115px;
+    padding: 25px;
+
+    position: absolute;
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform .5s linear 0s;
+    transition: transform .5s linear 0s;
+    -webkit-transform: perspective( 600px ) rotateY( 0deg );
+    transform: perspective( 600px ) rotateY( 0deg );
+}
+
+.front p {
+    font-size: 25px;
+    line-height: 1.05;
+    font-family: 'baron_neueblack';
+
+    margin-top: 45px;
+}
+.flip3D > .back {
+    font-family: arial;
+    font-size: 13px;
+    color: #fff;
+    background-color: #ed217c;
+
+    height: 215px;
+    width: 215px;
+    border-radius: 115px;
+    padding: 25px;
+
+    position: absolute;
+
+    -webkit-transform: perspective( 600px ) rotateY( 180deg );
+    transform: perspective( 600px ) rotateY( 180deg );
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform .5s linear 0s;
+    transition: transform .5s linear 0s;
+}
+
+.flip3D:hover > .front {
+    -webkit-transform: perspective( 600px ) rotateY( -180deg );
+    transform: perspective( 600px ) rotateY( -180deg );
+}
+.flip3D:hover > .back {
+    -webkit-transform: perspective( 600px ) rotateY( 0deg );
+    transform: perspective( 600px ) rotateY( 0deg );
+}
+
+.back p {
+    font-size: 13px;
+}
+
+.dict {
+    font-size: 15px;
+    font-family: 'brandon_grotesque_regularRg';
+}
+
+.bubbleArcbees {
+    background-color: #fff;
+    height: 139px;
+    width: 139px;
+    border-radius: 70px;
+    padding: 40px 10px;
+    margin: 20px 0 0 -83px;
+}
+
+.left {
+    float: left;
+}
+
+.logoArcbees {
+    height: 44px;
+    margin-top: -7px;
+}
+
+@sprite .backTop {
+    gwt-image: "backTop";
+
+    height: 19px;
+    width: 29px;
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    padding: 40px 0 25px;
+}
+
+/* -- bubble --*/
+/* ________________________________ */
+
+.moveFastest {
+    position: absolute;
+    top: -240px;
+
+    animation: mymove 20s infinite;
+    -webkit-animation: mymove 20s infinite; /* Safari and Chrome */
+    animation-delay: 15s;
+    -webkit-animation-delay: 15s;
+}
+
+.moveFaster {
+    position: absolute;
+    top: -240px;
+
+    animation: mymove 22s infinite;
+    -webkit-animation: mymove 22s infinite; /* Safari and Chrome */
+    animation-delay: 10s;
+    -webkit-animation-delay: 10s;
+}
+
+.moveFast {
+    position: absolute;
+    top: -240px;
+
+    animation: mymove 24s infinite;
+    -webkit-animation: mymove 24s infinite; /* Safari and Chrome */
+}
+
+.moveMed {
+    position: absolute;
+    top: -240px;
+
+    animation: mymove 26s infinite;
+    -webkit-animation: mymove 26s infinite; /* Safari and Chrome */
+    animation-delay: 20s;
+    -webkit-animation-delay: 20s;
+}
+
+.moveMed2 {
+    position: absolute;
+    top: -240px;
+
+    animation: mymove 26s infinite;
+    -webkit-animation: mymove 26s infinite; /* Safari and Chrome */
+    animation-delay: 5s;
+    -webkit-animation-delay: 5s;
+}
+
+.moveMed3 {
+    position: absolute;
+    top: -240px;
+
+    animation: mymove 26s infinite;
+    -webkit-animation: mymove 26s infinite; /* Safari and Chrome */
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+}
+
+.moveSlow {
+    position: absolute;
+    top: -240px;
+
+    animation: mymove 28s infinite;
+    -webkit-animation: mymove 28s infinite; /* Safari and Chrome */
+    animation-delay: 15s;
+    -webkit-animation-delay: 15s;
+}
+
+.moveSlower {
+    position: absolute;
+    top: -240px;
+
+    animation: mymove 30s infinite;
+    -webkit-animation: mymove 30s infinite; /* Safari and Chrome */
+    animation-delay: 5s;
+    -webkit-animation-delay: 5s;
+}
+
+.moveSlowest {
+    position: absolute;
+    top: -240px;
+
+    animation: mymove 32s infinite;
+    -webkit-animation: mymove 32s infinite; /* Safari and Chrome */
+}
+
+
+.bubble1 {
+    width: 120px;
+    height: 240px;
+
+    position: absolute;
+    left: -10px;
+}
+
+.bubble2 {
+    width: 120px;
+    height: 240px;
+
+    position: absolute;
+    left: 166px;
+}
+
+.bubble3 {
+    width: 120px;
+    height: 240px;
+
+    position: absolute;
+    left: 50px;
+}
+
+.bubble4 {
+    width: 120px;
+    height: 240px;
+
+    position: absolute;
+    left: 260px;
+}
+
+.bubble5 {
+    width: 120px;
+    height: 240px;
+
+    position: absolute;
+    left: 10px;
+}
+
+.bubble6 {
+    width: 120px;
+    height: 240px;
+
+    position: absolute;
+    left: 775px;
+}
+
+.bubble7 {
+    width: 120px;
+    height: 240px;
+
+    position: absolute;
+    left: 690px;
+}
+
+.bubble8 {
+    width: 120px;
+    height: 240px;
+
+    position: absolute;
+    left: 840px;
+}
+
+.bubble9 {
+    width: 120px;
+    height: 240px;
+
+    position: absolute;
+    left: 875px;
+}
+
+@keyframes mymove {
+    from {
+        top: 120%;
+    }
+    to {
+        top: -240px;
+    }
+}
+
+@-webkit-keyframes mymove {
+    from {
+        top:120%;
+    }
+    to {
+        top:-240px;
+    }
 }
