@@ -4,7 +4,7 @@
 
     <ui:with field="coreRes" type="com.arcbees.geekette.client.resources.Resources"/>
 
-    <g:HTMLPanel ui:field="main" styleName="{coreRes.styles.height}">
+    <g:HTMLPanel styleName="{coreRes.styles.height}">
         <div class="{coreRes.styles.wrapperBubble}">
             <div class="{coreRes.styles.section} {coreRes.styles.bubble}">
                 <div class="{coreRes.styles.moveSlow}">
