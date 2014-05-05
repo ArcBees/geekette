@@ -19,14 +19,16 @@ package com.arcbees.geekette.client.application;
 import com.arcbees.geekette.client.NameTokens;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
+import com.gwtplatform.mvp.client.HasUiHandlers;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyStandard;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 
-public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView, ApplicationPresenter.MyProxy> {
-    interface MyView extends View {
+public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView, ApplicationPresenter.MyProxy>
+        implements ApplicationUiHandlers {
+    interface MyView extends View, HasUiHandlers<ApplicationUiHandlers> {
     }
 
     @ProxyStandard
@@ -34,11 +36,23 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
     interface MyProxy extends ProxyPlace<ApplicationPresenter> {
     }
 
+    private final BuyPresenter buyPresenter;
+
     @Inject
     ApplicationPresenter(
             EventBus eventBus,
             MyView view,
-            MyProxy proxy) {
+            MyProxy proxy,
+            BuyPresenter buyPresenter) {
         super(eventBus, view, proxy, RevealType.Root);
+
+        this.buyPresenter = buyPresenter;
+
+        getView().setUiHandlers(this);
+    }
+
+    @Override
+    public void onBuy() {
+        addToPopupSlot(buyPresenter, true);
     }
 }
