@@ -116,6 +116,32 @@ public interface Resources extends ClientBundle {
         String bubble9();
 
         String backTop();
+
+        String popup();
+
+        String popupWrapper();
+
+        String popupPrice();
+
+        String popupCost();
+
+        String popupTotal();
+
+        String nbTickets();
+
+        String numCarte();
+
+        String small();
+
+        String right();
+
+        String error();
+
+        String bgPink();
+
+        String annuler();
+
+        String iconBomb();
     }
 
     @Source("styles.css")
@@ -126,6 +152,10 @@ public interface Resources extends ClientBundle {
     ImageResource logoCrown();
 
     ImageResource backTop();
+
+    ImageResource iconBomb();
+
+    ImageResource bgError();
 
     SVGResource bubble1();
 
@@ -147,13 +177,13 @@ public interface Resources extends ClientBundle {
 
     SVGResource logoArcbees();
 
-    SVGResource iconMail();
-
     SVGResource iconFb();
 
     SVGResource iconLkin();
 
     SVGResource iconTwit();
+
+    SVGResource iconGplus();
 
     @Source("baron/baron_neue-webfont.eot")
     DataResource baronNeueEot();
