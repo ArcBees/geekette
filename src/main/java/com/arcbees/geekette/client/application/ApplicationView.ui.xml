@@ -66,10 +66,10 @@
                         Jeudi le 28 Mai 2014, 18h
                     </div>
                     <div class="{coreRes.styles.place}">
-                        Chez Boulay<br/>797, boulevard lebourgneuf
+                        Chez Boulay<br/>1110 Rue Saint-Jean
                     </div>
                     <div class="{coreRes.styles.ticket} {coreRes.styles.clearfix}">
-                        <g:Button ui:field="buy">achetez<br/>votre ticket
+                        <g:Button ui:field="buy" styleName="{coreRes.styles.ticket}">achetez<br/>votre ticket
                         </g:Button>
                         <div class="{coreRes.styles.partager}">
                             <div class="{coreRes.styles.share} {coreRes.styles.tt}">
@@ -85,7 +85,7 @@
                                         <li>
                                             <a href="https://plus.google.com/share?url=https://geekettes.arcbees.com/"
                                                target="_blank">
-                                                <svg:SVGImage resource="{coreRes.iconLkin}"/>
+                                                <svg:SVGImage resource="{coreRes.iconGplus}"/>
                                             </a>
                                         </li>
                                         <li>
@@ -106,10 +106,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- wrapper -->
             </div>
         </div>
-        <!-- main-container -->
         <div class="{coreRes.styles.section}">
             <div>
                 <div class="{coreRes.styles.wrapper} {coreRes.styles.txtcenter}">
@@ -117,41 +115,34 @@
                         <div class="{coreRes.styles.logoCrown}">
                             <g:Image resource="{coreRes.logoCrown}"/>
                         </div>
-                        <h3>geekettes<br/>recherchées
-                        </h3>
-                        <p>pour rencontre IRL afin de découvrir le monde des mousseux et champagnes, déguster des
-                            bouchées et tester leur connaissance de la culture geek au cours de la soirée, le tout afin
-                            de couronner
-                            <strong>LA geekette de Québec.</strong>
-                        </p>
-                        <p class="{coreRes.styles.txtPink}">
-                            <strong>Faites vite, les places sont limitées!</strong>
-                        </p>
+                        <h3>geekettes<br/>recherchées</h3>
+                        <p>pour rencontre IRL afin de découvrir le monde des mousseux et champagnes, déguster des bouchées et tester leur connaissance de la culture geek au cours de la soirée, le tout afin de couronner <strong>LA geekette de Québec.</strong></p>
+                        <p class="{coreRes.styles.txtPink}"><strong>Faites vite, les places sont limitées!</strong></p>
                         <p>Les geeks sont également les bienvenus.</p>
                     </div>
-                    <div class="{coreRes.styles.flip3D}">
-                        <div class="{coreRes.styles.front}">
+                <div class="{coreRes.styles.flip3D}">
+                    <div class="{coreRes.styles.front}">
                             <p>c'est quoi une<br/>geekette ?
                             </p>
-                        </div>
-                        <div class="{coreRes.styles.back}">
-                            <h3>geekette
-                                <span class="{coreRes.styles.dict}">(n.f.)</span>
-                            </h3>
-                            <p>Femme branchée et passionnée - un peu, beaucoup, passionnément, à la folie - par l'un ou
-                                l'autre des domaines suivants: l'informatique, les nouvelles technologies, le gaming, le
-                                cinéma, les séries télé, la science-fiction et les univers fantastiques.
-                            </p>
-                        </div>
                     </div>
-                    <div class="{coreRes.styles.bubbleArcbees} {coreRes.styles.left}">
-                        <p>Un événement</p>
-                        <div class="{coreRes.styles.logoArcbees}">
-                            <a href="http://www.arcbees.com" target="_blank">
-                                <svg:SVGImage resource="{coreRes.logoArcbees}"/>
-                            </a>
-                        </div>
+                    <div class="{coreRes.styles.back}">
+                        <h3>geekette
+                           <span class="{coreRes.styles.dict}">(n.f.)</span>
+                        </h3>
+                        <p>Femme branchée et passionnée - un peu, beaucoup, passionnément, à la folie - par l'un ou
+                           l'autre des domaines suivants: l'informatique, les nouvelles technologies, le gaming, le
+                           cinéma, les séries télé, la science-fiction et les univers fantastiques.
+                        </p>
                     </div>
+                </div>
+                <div class="{coreRes.styles.bubbleArcbees} {coreRes.styles.left}">
+                    <p>Un événement</p>
+                    <div class="{coreRes.styles.logoArcbees}">
+                        <a href="http://www.arcbees.com" target="_blank">
+                            <svg:SVGImage resource="{coreRes.logoArcbees}"/>
+                        </a>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>
