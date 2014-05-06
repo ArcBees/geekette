@@ -14,8 +14,11 @@
  * the License.
  */
 
-package com.arcbees.geekette.shared;
+package com.arcbees.geekette.client.application;
 
-public class ResourcesPath {
-    public static final String BUY_NOW = "/buynow";
+import com.arcbees.geekette.shared.CreditCardInfo;
+import com.gwtplatform.mvp.client.UiHandlers;
+
+public interface BuyUiHandlers extends UiHandlers {
+    void onBuyNow(CreditCardInfo creditCardInfo);
 }

@@ -17,6 +17,7 @@
 package com.arcbees.geekette.client;
 
 import com.arcbees.geekette.client.application.ApplicationModule;
+import com.arcbees.stripe.client.StripeModule;
 import com.gwtplatform.dispatch.rest.client.gin.RestDispatchAsyncModule;
 import com.gwtplatform.mvp.client.annotations.DefaultPlace;
 import com.gwtplatform.mvp.client.annotations.ErrorPlace;
@@ -33,6 +34,7 @@ public class ClientModule extends AbstractPresenterModule {
 
         install(new DefaultModule(DefaultPlaceManager.class, RouteTokenFormatter.class));
         install(new ApplicationModule());
+        install(new StripeModule());
 
         bindConstant().annotatedWith(DefaultPlace.class).to(NameTokens.HOME);
         bindConstant().annotatedWith(ErrorPlace.class).to(NameTokens.HOME);

@@ -14,8 +14,22 @@
  * the License.
  */
 
-package com.arcbees.geekette.shared;
+package com.arcbees.geekette.server.api;
 
-public class ResourcesPath {
-    public static final String BUY_NOW = "/buynow";
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+
+import com.arcbees.geekette.shared.CreditCardInfo;
+import com.arcbees.geekette.shared.ResourcesPath;
+
+@Path(ResourcesPath.BUY_NOW)
+@Produces(MediaType.APPLICATION_JSON)
+public class BuyNowResource {
+    @POST
+    public Response buyNow(CreditCardInfo creditCardInfo) {
+        return Response.ok().build();
+    }
 }

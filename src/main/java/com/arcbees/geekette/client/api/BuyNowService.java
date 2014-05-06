@@ -14,8 +14,18 @@
  * the License.
  */
 
-package com.arcbees.geekette.shared;
+package com.arcbees.geekette.client.api;
 
-public class ResourcesPath {
-    public static final String BUY_NOW = "/buynow";
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+
+import com.arcbees.geekette.shared.CreditCardInfo;
+import com.arcbees.geekette.shared.ResourcesPath;
+import com.gwtplatform.dispatch.rest.shared.RestAction;
+import com.gwtplatform.dispatch.rest.shared.RestService;
+
+@Path(ResourcesPath.BUY_NOW)
+public interface BuyNowService extends RestService {
+    @POST
+    RestAction<Void> buyNow(CreditCardInfo creditCardInfo);
 }
