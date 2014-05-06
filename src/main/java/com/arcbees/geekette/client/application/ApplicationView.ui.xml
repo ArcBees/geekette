@@ -157,7 +157,7 @@
         </div>
         <footer>
             <div class="{coreRes.styles.wrapper} {coreRes.styles.clearfix}">
-                <a href="#" class="{coreRes.styles.backTop}"></a>
+                <g:Anchor styleName="{coreRes.styles.backTop}" ui:field="backToTop"></g:Anchor>
             </div>
             <!-- wrapper -->
         </footer>
