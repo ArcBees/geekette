@@ -24,6 +24,12 @@ import com.google.gwt.resources.client.DataResource;
 import com.google.gwt.resources.client.ImageResource;
 
 public interface Resources extends ClientBundle {
+//    public interface MediaQueries extends CssResource {
+//        String wrapper();
+//
+//        String noMobile();
+//    }
+
     public interface Styles extends CssResource {
         String height();
 
@@ -131,6 +137,12 @@ public interface Resources extends ClientBundle {
 
         String numCarte();
 
+        String thanks();
+
+        String and();
+
+        String merci();
+
         String small();
 
         String right();
@@ -146,6 +158,9 @@ public interface Resources extends ClientBundle {
 
     @Source("styles.css")
     Styles styles();
+
+//    @Source("mediaQueries.css")
+//    MediaQueries mediaQueries();
 
     ImageResource logo();
 
