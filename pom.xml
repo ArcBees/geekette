@@ -18,6 +18,7 @@
         <gin.version>2.1.2</gin.version>
         <gwtquery.version>1.4.1</gwtquery.version>
         <gae-studio.version>0.8.2</gae-studio.version>
+        <gwtstripe.version>0.1.0-alpha</gwtstripe.version>
 
         <!-- server -->
         <gae.version>1.9.4</gae.version>
@@ -113,6 +114,12 @@
             <groupId>com.googlecode.gwtquery</groupId>
             <artifactId>gwtquery</artifactId>
             <version>${gwtquery.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.arcbees.stripe</groupId>
+            <artifactId>gwt-stripe</artifactId>
+            <version>${gwtstripe.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>

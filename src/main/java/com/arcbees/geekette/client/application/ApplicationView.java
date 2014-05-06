@@ -22,12 +22,13 @@ import com.google.gwt.animation.client.Animation;
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.query.client.Function;
-import com.google.gwt.query.client.GQuery;
 import com.google.gwt.query.client.plugins.effects.PropertiesAnimation.EasingCurve;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewWithUiHandlers;
+
+import static com.google.gwt.query.client.GQuery.$;
 
 public class ApplicationView extends ViewWithUiHandlers<ApplicationUiHandlers> implements ApplicationPresenter.MyView {
     interface Binder extends UiBinder<Widget, ApplicationView> {
@@ -74,7 +75,7 @@ public class ApplicationView extends ViewWithUiHandlers<ApplicationUiHandlers> i
 
     @UiHandler("backToTop")
     void onBackToTopClicked(ClickEvent e) {
-        GQuery.$("html, body").each(new Function() {
+        $("html, body").each(new Function() {
             @Override
             public void f(Element element) {
                 Animation animation = new ScrollTopAnimation(element);

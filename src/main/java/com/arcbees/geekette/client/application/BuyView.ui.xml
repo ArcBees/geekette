@@ -11,32 +11,29 @@
                     <p>par billet</p>
                 </div>
                 <h2>Achat<br/>de billets</h2>
-                <p>J'achète <input class="{coreRes.styles.nbTickets}"/> billets</p>
-                <p class="{coreRes.styles.popupTotal}">Ce qui vous fait un TOTAL de <span class="{coreRes.styles.txtPink}">XXX$ CAD</span></p>
-                <div class="{coreRes.styles.error}">
-                    <p>Courriel non valide</p>
-                </div>
+                <p>J'achète <g:IntegerBox ui:field="numberOfTickets" styleName="{coreRes.styles.nbTickets}"/> billets</p>
+                <p class="{coreRes.styles.popupTotal}">Ce qui vous fait un TOTAL de <g:InlineLabel styleName="{coreRes.styles.txtPink}" ui:field="total"/></p>
                 <div>
-                    <input placeholder="Votre charmant NOM"/>
-                    <input placeholder="Votre courriel"/><i class="{coreRes.styles.iconBomb}"/>
-                    <input placeholder="Merci de confirmer votre courriel"/>
+                    <g:TextBox ui:field="name" />
+                    <g:TextBox ui:field="email" /><i class="{coreRes.styles.iconBomb}"/>
                 </div>
             </div>
             <div class="{coreRes.styles.bgPink}">
                 <div class="{coreRes.styles.popupWrapper}">
                     <div class="{coreRes.styles.clearfix}">
-                        <p>Votre numéro de carte <input class="{coreRes.styles.numCarte} {coreRes.styles.right}"/></p>
+                        <p>Votre numéro de carte <g:TextBox ui:field="creditCard" styleName="{coreRes.styles.numCarte} {coreRes.styles.right}"/></p>
                     </div>
                     <div class="{coreRes.styles.clearfix}">
-                        CVC <input class="{coreRes.styles.small}"/>
+                        CVC <g:TextBox ui:field="cvc" styleName="{coreRes.styles.small}"/>
                         <div class="{coreRes.styles.right}">
-                            Expiration <input class="{coreRes.styles.small}"/>  /  <input class="{coreRes.styles.small}"/>
+                            Expiration <g:IntegerBox ui:field="month" styleName="{coreRes.styles.small}"/>
+                            /  <g:IntegerBox ui:field="year" styleName="{coreRes.styles.small}"/>
                         </div>
                     </div>
                 </div>
             </div>
             <footer class="{coreRes.styles.popupWrapper}">
-                <button class="{coreRes.styles.ticket}">achetez</button>
+                <g:Button ui:field="buyNow" enabled="false" styleName="{coreRes.styles.ticket}">achetez</g:Button>
                 <div class="{coreRes.styles.annuler} {coreRes.styles.right}">
                     annuler
                 </div>

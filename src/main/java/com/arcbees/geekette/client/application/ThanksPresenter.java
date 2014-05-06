@@ -14,8 +14,23 @@
  * the License.
  */
 
-package com.arcbees.geekette.shared;
+package com.arcbees.geekette.client.application;
 
-public class ResourcesPath {
-    public static final String BUY_NOW = "/buynow";
+import javax.inject.Inject;
+
+import com.arcbees.geekette.client.application.ThanksPresenter.MyView;
+import com.google.web.bindery.event.shared.EventBus;
+import com.gwtplatform.mvp.client.PopupView;
+import com.gwtplatform.mvp.client.PresenterWidget;
+
+public class ThanksPresenter extends PresenterWidget<MyView> {
+    interface MyView extends PopupView {
+    }
+
+    @Inject
+    ThanksPresenter(
+            EventBus eventBus,
+            MyView view) {
+        super(eventBus, view);
+    }
 }

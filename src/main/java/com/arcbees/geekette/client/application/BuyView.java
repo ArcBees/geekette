@@ -18,21 +18,92 @@ package com.arcbees.geekette.client.application;
 
 import javax.inject.Inject;
 
+import com.arcbees.geekette.client.application.BuyPresenter.MyView;
+import com.arcbees.geekette.shared.CreditCardInfo;
+import com.google.gwt.editor.client.Editor;
+import com.google.gwt.editor.client.SimpleBeanEditorDriver;
+import com.google.gwt.event.dom.client.BlurEvent;
+import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.uibinder.client.UiHandler;
+import com.google.gwt.user.client.ui.Button;
+import com.google.gwt.user.client.ui.InlineLabel;
+import com.google.gwt.user.client.ui.IntegerBox;
+import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.web.bindery.event.shared.EventBus;
-import com.gwtplatform.mvp.client.PopupViewImpl;
+import com.gwtplatform.mvp.client.PopupViewWithUiHandlers;
 
-public class BuyView extends PopupViewImpl implements BuyPresenter.MyView {
+import static com.google.gwt.query.client.GQuery.$;
+
+public class BuyView extends PopupViewWithUiHandlers<BuyUiHandlers> implements MyView, Editor<CreditCardInfo> {
+    private final Driver driver;
+
     interface Binder extends UiBinder<Widget, BuyView> {
     }
 
+    interface Driver extends SimpleBeanEditorDriver<CreditCardInfo, BuyView> {
+    }
+
+    @UiField
+    Button buyNow;
+    @UiField
+    InlineLabel total;
+    @UiField
+    TextBox name;
+    @UiField
+    TextBox email;
+    @UiField
+    TextBox creditCard;
+    @UiField
+    IntegerBox month;
+    @UiField
+    IntegerBox year;
+    @UiField
+    TextBox cvc;
+
+    @Ignore
+    @UiField
+    IntegerBox numberOfTickets;
+
     @Inject
     BuyView(
-            EventBus eventBus,
-            Binder binder) {
+            Binder binder,
+            Driver driver,
+            EventBus eventBus) {
         super(eventBus);
 
+        this.driver = driver;
+
         initWidget(binder.createAndBindUi(this));
+        driver.initialize(this);
+        driver.edit(new CreditCardInfo());
+
+        $(name).attr("placeholder", "Votre charmant NOM");
+        $(email).attr("placeholder", "Votre courriel");
+        $(year).attr("placeholder", "aaaa");
+        $(month).attr("placeholder", "mm");
+
+        name.getElement().setAttribute("placeholder", "Votre charmant NOM");
+    }
+
+    @Override
+    public void enableBuyNow() {
+        buyNow.setEnabled(true);
+    }
+
+    @UiHandler("buyNow")
+    void onBuyNow(ClickEvent event) {
+        CreditCardInfo creditCardInfo = driver.flush();
+
+        getUiHandlers().onBuyNow(creditCardInfo);
+    }
+
+    @UiHandler("numberOfTickets")
+    void onNumberOfTickets(BlurEvent event) {
+        String totalString = String.valueOf(numberOfTickets.getValue() * 55);
+
+        total.setText(totalString + "$");
     }
 }
