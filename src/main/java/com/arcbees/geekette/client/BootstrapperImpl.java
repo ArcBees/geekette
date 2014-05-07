@@ -19,6 +19,7 @@ package com.arcbees.geekette.client;
 import javax.inject.Inject;
 
 import com.arcbees.geekette.client.resources.Resources;
+//import com.google.gwt.dom.client.StyleInjector;
 import com.gwtplatform.mvp.client.Bootstrapper;
 import com.gwtplatform.mvp.client.proxy.PlaceManager;
 
@@ -32,6 +33,7 @@ public class BootstrapperImpl implements Bootstrapper {
         this.placeManager = placeManager;
 
         resources.styles().ensureInjected();
+//        StyleInjector.injectAtEnd("@media (max-width: 768px) {"+ resources.mediaQueries().getText()+"}");
     }
 
     @Override

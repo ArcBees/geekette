@@ -3,9 +3,15 @@
 
     <ui:with field="coreRes" type="com.arcbees.geekette.client.resources.Resources"/>
 
-    <g:PopupPanel styleName="{coreRes.styles.popup}" autoHideEnabled="true">
+    <g:PopupPanel styleName="{coreRes.styles.popup} {coreRes.styles.thanks}" autoHideEnabled="true">
         <g:HTMLPanel>
-            Thanks
+            <!--<div class="{coreRes.styles.error}">-->
+                <!--<p>votre addresse courriel n'est pas valide</p>-->
+            <!--</div>-->
+            <p class="{coreRes.styles.merci} {coreRes.styles.txtPink}">
+                <span>Merci</span><br/><span class="{coreRes.styles.and}">and</span><br/>drink<br/>champagne<sup>*</sup>
+            </p>
+            <p class="{coreRes.styles.txtPink}"><sup>*</sup>tout en étant raisonnable,<br/>car la modération ne vous fait pas faire n'importe quoi... avec n'importe qui!</p>
         </g:HTMLPanel>
     </g:PopupPanel>
 </ui:UiBinder>
